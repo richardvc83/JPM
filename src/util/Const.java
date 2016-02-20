@@ -18,4 +18,7 @@ public class Const {
 	
 	// default value
 	public static final double zero=0.0;
+	
+	// Dead line
+	public static final long deadLine=90000;
 }
