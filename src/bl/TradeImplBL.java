@@ -134,7 +134,7 @@ public class TradeImplBL implements TradeBL{
 	 */
 	private List<TradeBE> filterList(List<TradeBE> listTrade) {
 		List<TradeBE> filteredListTrade=new ArrayList<TradeBE>();
-		final long deadLine=System.currentTimeMillis()-90000;
+		final long deadLine=System.currentTimeMillis()-Const.deadLine;
 		
 		Iterator<TradeBE> iter = listTrade.iterator();
 		while(iter.hasNext()){
